@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import MovingBanner from "@/components/MovingBanner";
 import HeroSection from "@/components/HeroSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import ProgramsSection from "@/components/ProgramsSection";
@@ -27,6 +28,7 @@ const Index = () => (
       <ContactSection />
     </main>
     <Footer />
+    <MovingBanner />
     <StickyMobileBar />
     <WhatsAppButton />
   </div>
