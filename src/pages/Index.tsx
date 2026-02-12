@@ -1,14 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import ProgramsSection from "@/components/ProgramsSection";
+import TrainersSection from "@/components/TrainersSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import PricingSection from "@/components/PricingSection";
+import GallerySection from "@/components/GallerySection";
+import CTAStrip from "@/components/CTAStrip";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import StickyMobileBar from "@/components/StickyMobileBar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-background text-foreground">
+    <Navbar />
+    <main>
+      <HeroSection />
+      <WhyChooseSection />
+      <ProgramsSection />
+      <TrainersSection />
+      <TestimonialsSection />
+      <PricingSection />
+      <GallerySection />
+      <CTAStrip />
+      <ContactSection />
+    </main>
+    <Footer />
+    <StickyMobileBar />
+    <WhatsAppButton />
+  </div>
+);
 
 export default Index;
